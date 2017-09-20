@@ -41,22 +41,19 @@ on boot
     write /sys/block/mmcblk0/queue/add_random 0
     write /sys/block/mmcblk0/bdi/read_ahead_kb 128
 
-service imsqmidaemon /system/vendor/bin/imsqmidaemon
+service vendor.imsqmidaemon /system/vendor/bin/imsqmidaemon
     class main
     user radio
     socket ims_qmid stream 0660 system radio
     group radio log oem_2950
 
-service imscmservice /system/vendor/bin/imscmservice
+service vendor.imscmservice /system/vendor/bin/imscmservice
     class main
     user radio
     group radio oem_2950 log
     disabled
 
-on property:sys.ims.DATA_DAEMON_STATUS=1
-    start imscmservice
-
-service imsdatadaemon /system/vendor/bin/imsdatadaemon
+service vendor.imsdatadaemon /system/vendor/bin/imsdatadaemon
     class main
     user radio
     socket ims_datad stream 0660 system radio
@@ -64,7 +61,10 @@ service imsdatadaemon /system/vendor/bin/imsdatadaemon
     disabled
 
 on property:sys.ims.QMI_DAEMON_STATUS=1
-    start imsdatadaemon
+    start vendor.imsdatadaemon
+
+on property:sys.ims.DATA_DAEMON_STATUS=1
+    start vendor.imscmservice
 
 on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
