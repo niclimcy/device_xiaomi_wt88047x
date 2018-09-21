@@ -22,7 +22,7 @@ cc_library_static {
 }
 
 cc_library_shared {
-    name: "android.hardware.sensors@1.0-impl",
+    name: "android.hardware.sensors@1.0-impl.wt88047x",
     defaults: ["hidl_defaults"],
     proprietary: true,
     relative_install_path: "hw",
@@ -38,16 +38,16 @@ cc_library_shared {
     ],
     static_libs: [
         "android.hardware.sensors@1.0-convert",
-        "multihal",
+        "multihal-wt88047x",
     ],
     local_include_dirs: ["include/sensors"],
 }
 
 cc_binary {
-    name: "android.hardware.sensors@1.0-service",
+    name: "android.hardware.sensors@1.0-service.wt88047x",
     relative_install_path: "hw",
     vendor: true,
-    init_rc: ["android.hardware.sensors@1.0-service.rc"],
+    init_rc: ["android.hardware.sensors@1.0-service.wt88047x.rc"],
     srcs: ["service.cpp"],
 
     shared_libs: [
