@@ -69,7 +69,7 @@ struct sensors_module_t HAL_MODULE_INFO_SYM = {
 				.dso = NULL,
 				.reserved = {0},
 		},
-		get_sensors_list: sensors__get_sensors_list,
+		.get_sensors_list = sensors__get_sensors_list,
 };
 
 struct sensors_poll_context_t {

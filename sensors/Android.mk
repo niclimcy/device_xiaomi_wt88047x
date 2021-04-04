@@ -16,7 +16,11 @@ LOCAL_SRC_FILES := \
     VirtualSensor.cpp \
     sensors_XML.cpp
 
-LOCAL_CFLAGS += -DLOG_TAG=\"Sensors\"
+LOCAL_CFLAGS += \
+    -DLOG_TAG=\"Sensors\" \
+    -Wno-format \
+    -Wno-unused-private-field \
+    -Wno-unused-variable
 
 LOCAL_C_INCLUDES := \
     external/libxml2/include \
@@ -37,6 +41,10 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := libcalmodule_common
+
+LOCAL_CFLAGS := \
+    -Wno-unused-variable
+
 LOCAL_SRC_FILES := \
     algo/common/common_wrapper.c \
     algo/common/compass/AKFS_AOC.c \
@@ -68,7 +76,10 @@ LOCAL_MODULE := sensors.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_VENDOR_MODULE := true
 
-LOCAL_CFLAGS := -Wall -Werror -DLOG_TAG=\"MultiHal\"
+LOCAL_CFLAGS := \
+    -DLOG_TAG=\"MultiHal\" \
+    -Wall \
+    -Werror
 
 LOCAL_SRC_FILES := \
     multihal.cpp \
