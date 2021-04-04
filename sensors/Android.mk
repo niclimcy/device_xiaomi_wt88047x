@@ -26,17 +26,11 @@ LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
 LOCAL_SHARED_LIBRARIES := liblog libcutils libdl libxml2 libutils
+LOCAL_HEADER_LIBRARIES := calibration_headers
 
 LOCAL_MODULE := sensors.$(TARGET_DEVICE)
 LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
-
-# Export calibration library needed dependency headers
-LOCAL_COPY_HEADERS_TO := sensors/inc
-LOCAL_COPY_HEADERS := \
-    CalibrationModule.h \
-    sensors_extension.h \
-    sensors.h
 
 include $(BUILD_SHARED_LIBRARY)
 
@@ -89,3 +83,11 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_STRIP_MODULE := false
 
 include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := calibration_headers
+LOCAL_EXPORT_C_INCLUDE := \
+    CalibrationModule.h \
+    sensors_extension.h \
+    sensors.h
+include $(BUILD_HEADER_LIBRARY)
