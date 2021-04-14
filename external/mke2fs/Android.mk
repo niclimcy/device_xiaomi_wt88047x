@@ -33,7 +33,7 @@ LOCAL_C_INCLUDES := $(mke2fs_c_includes)
 LOCAL_CFLAGS := $(mke2fs_cflags)
 LOCAL_WHOLE_STATIC_LIBRARIES := $(mke2fs_whole_static_libraries)
 LOCAL_STATIC_LIBRARIES := $(mke2fs_static_libraries)
-LOCAL_MODULE := mke2fs_wt88047
+LOCAL_MODULE := mke2fs_wt88047x
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/install/bin
 LOCAL_FORCE_STATIC_EXECUTABLE := true
 

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_wt88047.mk
+    $(LOCAL_DIR)/lineage_wt88047x.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_wt88047-user \
-    lineage_wt88047-userdebug \
-    lineage_wt88047-eng
+    lineage_wt88047x-user \
+    lineage_wt88047x-userdebug \
+    lineage_wt88047x-eng

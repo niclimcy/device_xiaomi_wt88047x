@@ -1,11 +1,11 @@
 Copyright (C) 2016 - The CyanogenMod Project
 
-Copyright (C) 2017 - The LineageOS Project
+Copyright (C) 2021 - The LineageOS Project
 
-Device configuration for Redmi 2 / Pro / Prime (wt88047)
+Device configuration for Redmi 2 / Pro / Prime (wt88047x)
 ========================================================
 
-The Wingtech Redmi 2 (codenamed _"wt88047"_) is a mid-range smartphone from Wingtech.
+The Redmi 2 (codenamed _"wt88047x"_) is a mid-range smartphone from Xiaomi.
 It was announced on January 2015.
 
 ## Device specifications

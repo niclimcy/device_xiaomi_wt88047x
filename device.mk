@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/wingtech/wt88047/wt88047-vendor.mk)
+$(call inherit-product, vendor/xiaomi/wt88047x/wt88047x-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -117,13 +117,13 @@ PRODUCT_PACKAGES += \
     calmodule.cfg \
     libcalmodule_common \
     sensors.msm8916 \
-    sensors.wt88047
+    sensors.wt88047x
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/_hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/_hals.conf
 
 # System Properties
-$(call inherit-product, device/wingtech/wt88047/system_prop.mk)
+$(call inherit-product, device/xiaomi/wt88047x/system_prop.mk)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
@@ -134,7 +134,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.wt88047
+    vendor.lineage.touch@1.0-service.wt88047x
 
 # USB ID
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \

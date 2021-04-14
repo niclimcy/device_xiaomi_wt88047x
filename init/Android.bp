@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_wt88047",
+    name: "libinit_wt88047x",
     recovery_available: true,
-    srcs: ["init_wt88047.cpp"],
+    srcs: ["init_wt88047x.cpp"],
     include_dirs: [
         "system/core/base/include",
         "system/core/init",

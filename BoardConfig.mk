@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ FORCE_32_BIT := true
 # Inherit from msm8916-common
 include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/wingtech/wt88047
+DEVICE_PATH := device/xiaomi/wt88047x
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -68,8 +68,8 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 TARGET_NO_RPC := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_wt88047
-TARGET_RECOVERY_DEVICE_MODULES := libinit_wt88047
+TARGET_INIT_VENDOR_LIB := libinit_wt88047x
+TARGET_RECOVERY_DEVICE_MODULES := libinit_wt88047x
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
@@ -90,4 +90,4 @@ TARGET_LD_SHIM_LIBS += \
     /vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so
 
 # inherit from the proprietary version
-include vendor/wingtech/wt88047/BoardConfigVendor.mk
+include vendor/xiaomi/wt88047x/BoardConfigVendor.mk

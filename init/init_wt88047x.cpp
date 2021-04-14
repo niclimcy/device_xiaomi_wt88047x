@@ -2,7 +2,7 @@
    Copyright (c) 2016, The Linux Foundation. All rights reserved.
    Copyright (C) 2016, The CyanogenMod Project
    Copyright (C) 2015-2016, Ketut P. Kumajaya
-   Copyright (C) 2017-2018, The LineageOS Project
+   Copyright (C) 2017-2021, The LineageOS Project
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are

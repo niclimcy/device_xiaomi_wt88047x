@@ -38,7 +38,7 @@ LOCAL_CFLAGS := $(sgdisk_cflags)
 LOCAL_STATIC_LIBRARIES := $(sgdisk_shared_libraries)
 LOCAL_STATIC_LIBRARIES += $(sgdisk_system_shared_libraries)
 
-LOCAL_MODULE := sgdisk_wt88047
+LOCAL_MODULE := sgdisk_wt88047x
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/install/bin
 LOCAL_FORCE_STATIC_EXECUTABLE := true
