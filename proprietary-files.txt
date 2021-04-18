@@ -3,13 +3,21 @@ bin/adsprpcd:vendor/bin/adsprpcd|ab9fb19d1b7e6254db23c21510a5bc5e0b4b3dd5
 vendor/lib/libadsprpc.so|93187780561cd584110b5cef93d4ae240da5bad6
 vendor/lib/libfastcvopt.so|9555cc678e1b798a17c273325a161b4ef5f0379f
 
+# Audio - from LA.BR.1.2.9.1-02310-8x16.0
+vendor/lib/libacdb-fts.so|6208304e3a0448ead0765c13a8357e961a7d6115
+vendor/lib/libacdbloader.so|645a15c35e9dd44979d0e4ae638df7552f2beb42
+vendor/lib/libacdbmapper.so|4c259dea1c7ec82b3f61bcc161d090c7a5a9ae43
+vendor/lib/libacdbrtac.so|945d8125ee8b891abc290566ccd9254d680cdb24
+vendor/lib/libadiertac.so|47ac4f936f08314def85ed3323e0885a95c5e7cb
+vendor/lib/libadm.so|eeb842bfa8ce22eb296a9f159f2aa51c4bad295d
+vendor/lib/libaudcal.so|4e85faf66c75d58df1adabe9e73fbc1ae1c741ba
+vendor/lib/libaudioalsa.so|a0170e763a7875f06de42ee90b887be6a9bb192a
+vendor/lib/libaudioparsers.so|983bde66f03ef8da09cacb4c090c595ce76ac68e
+vendor/lib/libdrc.so|ef06fb45092295f75d4d60cf95524d5d73bb211a
+vendor/lib/libFlacSwDec.so|e174ff678fbb4a770729e39cc8c7f46a5465bd5b
+vendor/lib/libsurround_3mic_proc.so|aba1c327c78ca00763302ac79413021af22570fa
+
 # Audio - from jalebi
-vendor/lib/libacdb-fts.so|60def53f08b844e21687b981fdee4e745386612a
-vendor/lib/libacdbloader.so|bd738ef73bf0c32570d3b4ddafbd2b519c37cc24
-vendor/lib/libacdbrtac.so|9bfe32c713147ca59db58be39e851750107f3be4
-vendor/lib/libadiertac.so|60c8719b7adaf224b486c9c2af0313dbe9e2579b
-vendor/lib/libaudcal.so|313579c679473759e2814784fd64faeac25e3bbe
-vendor/lib/libFlacSwDec.so|b06f87e91a6ec9e8bf5e200a313467d5ed6f72fa
 vendor/lib/soundfx/libqcbassboost.so|8ed65760940653ada21d72cd5fb7b66174cbc422
 vendor/lib/soundfx/libqcreverb.so|725ce9f7d696dae58da423f33dbbf2abcf16b9ac
 vendor/lib/soundfx/libqcvirt.so|5393f3a58247619413f35b7550d48e7cc0bd39d5
@@ -139,57 +147,61 @@ vendor/lib/libgeofence.so|bd34516de3c933d81267822716235c358ab6695d
 vendor/lib/libizat_core.so|8a948e4f2aa38463050c6399f04ecb38564689d6
 vendor/lib/liblbs_core.so|10caf0d54768114cd471c33a1e2dc6385d3c7707
 
-# Graphics - from crackling
-vendor/lib/egl/eglsubAndroid.so|a80ffa441af58222dc43ba2a15fb2d4f2a9fae59
-vendor/lib/egl/eglSubDriverAndroid.so|6f5ae2f50bae4917173bc1f23eedbb932e068994
-vendor/lib/egl/libEGL_adreno.so|c30e4b0741e48c424aea23bf74dbf0e8b3a99369
-vendor/lib/egl/libESXEGL_adreno.so|7fb1078f65d5ccec000e90466e347308d7faa98b
-vendor/lib/egl/libESXGLESv1_CM_adreno.so|817a1ecda830c46c170b2733b2fbc26f97b04180
-vendor/lib/egl/libESXGLESv2_adreno.so|377452ed2d1b0655d7eca4a03fb763d7043aba30
-vendor/lib/egl/libGLESv1_CM_adreno.so|629e554170807f47a6790d559952ede06df0c9a6
-vendor/lib/egl/libGLESv2_adreno.so|70c7d8a44042fd0a9280c8ed2e9e738c3f14b0c3
-vendor/lib/egl/libq3dtools_adreno.so|4c3a394cd397e05b0794aa1bb16531da4c03855d
-vendor/lib/egl/libQTapGLES.so|900229ff94bbc44722d0df2a685b8ad2fbf1c51e
-vendor/lib/egl/libRBEGL_adreno.so|ce9a65968612e852d01f0bd6e1743dce015db7d1
-vendor/lib/egl/libRBGLESv1_CM_adreno.so|8c8491f0f4decb8658af866e32fc083322095f20
-vendor/lib/egl/libRBGLESv2_adreno.so|4bd77c04fc435de9d198da0233513dda6e557dab
-vendor/lib/libadreno_utils.so|522db7791ef53fc0747fc66274e3d9d01ac7b406
-vendor/lib/libC2D2.so|cea171dbb9aa813fb1d2255a8816cd67555bfded
-vendor/lib/libc2d30-a3xx.so|39569008421b7841f567c0a4525638d81d32ffe7
-vendor/lib/libCB.so|7c0a1a9363e7e212aa67e0f9aed2acee65d4ec39
-vendor/lib/libgsl.so|252cd2ec1006268a45df66bdce947e647d1efe5b
-vendor/lib/libllvm-glnext.so|2e5785200004df231403074c0f6d7d87bf395745
-vendor/lib/libllvm-qcom.so|77f2a0adf9c36291a02055be3fcd1cf5fa82a113
-vendor/lib/libOpenCL.so|9c3f63df298c155a526d075c9d2643d01b59f98a
-vendor/lib/libsc-a3xx.so|a03fc9f0c929cb4adf013f8a463cfbef68d48090
-vendor/lib/libscale.so|972cbd87794b4ce0a5c23db946acbafd4cd6d073
+# Graphics - from LA.BR.1.2.9.1-02310-8x16.0
+vendor/lib/egl/eglsubAndroid.so|d22d8b426b409978c3296c4bc16e29e88d54b89e
+vendor/lib/egl/eglSubDriverAndroid.so|14de8f43dfb3048d1d372ba9e3101144fff954a0
+vendor/lib/egl/libEGL_adreno.so|d105fee3e366e0b4022a9fdfc4cf558a802a4862
+vendor/lib/egl/libESXEGL_adreno.so|84228e5363b61241d4646eace9471d981197d14a
+vendor/lib/egl/libESXGLESv1_CM_adreno.so|3d8a3d811b448a37452fffe712ebc8e3ec082c34
+vendor/lib/egl/libESXGLESv2_adreno.so|0986625bda96f26c58b7071c2cf436aa8414fdf5
+vendor/lib/egl/libGLESv1_CM_adreno.so|e41b0702690db1dea8245612af85afdc0a24f06f
+vendor/lib/egl/libGLESv2_adreno.so|469915503edaa93128061fb6842a8b70f79b1495
+vendor/lib/egl/libq3dtools_adreno.so|065eba645b9a3328d6a54bc3af1d881755794641
+vendor/lib/egl/libq3dtools_esx.so|62845b4804c6132620518c35a8e2f291c22fdc6f
+vendor/lib/egl/libQTapGLES.so|8bfb372927953854246d20e3165ca435050d97c6
+vendor/lib/egl/libRBEGL_adreno.so|6899334f1cc748f595ec340231e852bfdab7ac8d
+vendor/lib/egl/libRBGLESv1_CM_adreno.so|622c5af750e718e8e511862451e03518ec831b7b
+vendor/lib/egl/libRBGLESv2_adreno.so|ed3432142747325135689d9b1c4f26037047815b
+vendor/lib/libadreno_utils.so|d048c107b541670f3c3e1b6788049d147eb5497b
+vendor/lib/libbccQTI.so|3624944be765e1a28aca1126d0881e897470aac8
+vendor/lib/libC2D2.so|57e944b2f850235f66790dfc8134cb41536bd063
+vendor/lib/libc2d30-a3xx.so|617cac979aab86e739e5abed6599a996c7e578eb
+vendor/lib/libCB.so|b34f3b02f2750fbb7b391b0a282511dcc27e9587
+vendor/lib/libgsl.so|5fcaa1e5a12e03b48c0115012803565edea1dd15
+vendor/lib/libllvm-glnext.so|1ce6c475922d6cf1226745cd2abb0bc259a4eef2
+vendor/lib/libllvm-qcom.so|6f0a37026cda4879bec0e7ca62f8cdb58a47532c
+vendor/lib/libOpenCL.so|ad85745efd83eb6d70dd205317171d7a830efba4
+vendor/lib/libRSDriver_adreno.so|927768956088f4c1b74c4b072f5d5b824e6a5956
+vendor/lib/librs_adreno.so|05b88edb55f2a606a8daf7eb437a2178ea9876d3
+vendor/lib/librs_adreno_sha1.so|012a6039e467b211d1aa481cd73ef70abfe6a382
+vendor/lib/libsc-a3xx.so|763b32c8c516f5507d37dc44762d0548404a3850
+vendor/lib/libscale.so|80477499a5c44d5f81a426cb3122b31a9dc837a6
 
 # Graphics firmware
 etc/firmware/a300_pfp.fw:vendor/firmware/a300_pfp.fw
 etc/firmware/a300_pm4.fw:vendor/firmware/a300_pm4.fw
 
-# Graphics RenderScript - bullhead OPR4.170623.006
-vendor/lib/libRSDriver_adreno.so|ee3386248adfa7d1a8c1107e051bcbbd3e8df0c1
-vendor/lib/librs_adreno.so|bb1d5cb84f14ed18fcbfb4815692cb196e44f180
-vendor/lib/librs_adreno_sha1.so|be8a817743950dac6e22b50cbd9657c2d35c35f2
-
-# Media - from jalebi
-vendor/lib/libOmxAacDec.so|7125dc53aaee56170b269278865b4ef3c4c8c61b
-vendor/lib/libOmxEvrcDec.so|9d7ebe0f32b84f131f28aab38ce90fb65ac1c87d
-vendor/lib/libOmxQcelp13Dec.so|b33a772d50668ac636b5db6a2d22d31f74ca5b2e
+# Media - from LA.BR.1.2.9.1-02310-8x16.0
+vendor/lib/libAlacSwDec.so|57969ad9069f7109518eff3bf5a8071ee62c299c
+vendor/lib/libApeSwDec.so|31ef5e2f5344e7948dced4e683ebf4ae585b4681
+vendor/lib/libOmxAacDec.so|4cedb4750db33e382c3ccb0ccbe5cbec840dc1e8
+vendor/lib/libOmxAlacDecSw.so|667c74bd6f9f6ce2135f107db229cb4157c0ed54
+vendor/lib/libOmxApeDecSw.so|6b0bfa43b0c9a7ce32d3ed3780fbe29e4e55aefa
+vendor/lib/libOmxEvrcDec.so|7ea1f411c6a6830d941c2256f5235a3e220ffec4
+vendor/lib/libOmxQcelp13Dec.so|5f6ebc980328fe43be545ae3ffe646a05b361228
 
 # Perf - from jalebi
 vendor/bin/perfd|5e31de336247378b0674b4d65494567ab76c190c
 vendor/lib/libqti-perfd-client.so|90b2007264bcda7fc706fd55becdea4c6b999233
 
-# Postprocessing - from jalebi
-bin/mm-pp-daemon:vendor/bin/mm-pp-daemon|56777bd6e5023b2d39efa3a3a7df11af3a06aa73
-vendor/lib/libdisp-aba.so|4445ff1e090b0122077823576ec4a38a3e8e2ae6
-vendor/lib/libmm-abl.so|a88a93ca967246b0c21df3ba6889b4b1e2a284ff
-vendor/lib/libmm-abl-oem.so|5940ead47b7ef85315d0ca0ad7ba126d2ac10b06
-vendor/lib/libmm-als.so|7ca49d1a2e9139182d4069b1f305312966da9983
-vendor/lib/libmm-disp-apis.so|342252fd53b5813cdd47a2bc01c91d62cdb21f1b
-vendor/lib/libmm-qdcm.so|00413d3c2e3b6a0b43f1a315af33592bec1d952c
+# Postprocessing - from LA.BR.1.2.9.1-02310-8x16.0
+bin/mm-pp-daemon:vendor/bin/mm-pp-daemon|a7adddd8ba568a38dbbdf9e768f53848f20030fc
+vendor/lib/libdisp-aba.so|93634695d87d19f5874fdebde3d6c6f84a3bb17e
+vendor/lib/libmm-abl-oem.so|e703731e15a9139ca661290d4497ce6f0eee5bd3
+vendor/lib/libmm-abl.so|3f029a728e3a115ce65f33629b1174e1811cb1d5
+vendor/lib/libmm-als.so|121eabb35d3f29112e7fd553e1b37f1f7cafa33a
+vendor/lib/libmm-disp-apis.so|9a35b2438adb7ece7f966914f702c3e799f0b076
+vendor/lib/libmm-qdcm.so|ca723c7ff409ae127fe584df3af48019ef7abad6
 
 # Qualcomm framework - from jalebi
 bin/irsc_util:vendor/bin/irsc_util|3e9ca860ef26dba7024812c378b6c5cd15b879aa
