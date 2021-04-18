@@ -238,9 +238,12 @@ vendor/lib/libsystem_health_mon.so|808950a838e8f01f0c6efe1ef25acc4ca3376a45
 vendor/lib/libxml.so|8b9cae9b4d1525e7fea093d6a53f363c842f3076
 
 # Radio IMS - from bullhead
--vendor/app/ims/ims.apk|2aa1158679ee5048987a3839f331ec5529d4ea43
 vendor/lib/libimscamera_jni.so|9d4aa0ca4082548a1bc06eba9ee8295bb6bd9d6b
 vendor/lib/libimsmedia_jni.so|0464f3f1f72d16153618d6a7555c229fd14830c4
+
+# Radio IMS - from marlin
+-vendor/app/ims/ims.apk|27bbfdc6675e0b4c77504a8cf60824f1f234294a
+-vendor/app/imssettings/imssettings.apk|0f3d622a59038cfc881a26f541f5cc7a0913b603
 
 # Radio IMS - from motorola
 bin/imscmservice:vendor/bin/imscmservice|2b6bb0cc2c244885556fe5c6ee75733b59ea1910
