@@ -32,7 +32,7 @@ LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 LOCAL_SHARED_LIBRARIES := liblog libcutils libdl libxml2 libutils
 LOCAL_HEADER_LIBRARIES := calibration_headers
 
-LOCAL_MODULE := sensors.$(TARGET_DEVICE)
+LOCAL_MODULE := sensors.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
 
@@ -71,27 +71,25 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := sensors.$(TARGET_BOARD_PLATFORM)
+LOCAL_MODULE := sensors.$(TARGET_DEVICE)
 
 LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_VENDOR_MODULE := true
+LOCAL_PROPRIETARY_MODULE := true
 
-LOCAL_CFLAGS := \
-    -DLOG_TAG=\"MultiHal\" \
-    -Wall \
-    -Werror
+LOCAL_CFLAGS := -Wall -Werror -DLOG_TAG=\"MultiHal\"
 
 LOCAL_SRC_FILES := \
     multihal.cpp \
     SensorEventQueue.cpp \
+
+LOCAL_HEADER_LIBRARIES := \
+    libhardware_headers \
 
 LOCAL_SHARED_LIBRARIES := \
     libcutils \
     libdl \
     liblog \
     libutils \
-
-LOCAL_STRIP_MODULE := false
 
 include $(BUILD_SHARED_LIBRARY)
 
