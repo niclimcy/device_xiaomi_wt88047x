@@ -113,7 +113,8 @@ PRODUCT_PACKAGES += \
 
 # Sensor HAL
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-impl.wt88047x \
+    android.hardware.sensors@1.0-service.wt88047x \
     calmodule.cfg \
     libcalmodule_common \
     sensors.msm8916 \
