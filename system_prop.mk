@@ -20,10 +20,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/platform/soc.0/7824900.sdhci/by-name/config
 
-# Fusion mag field filter
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.fusion.magfield.max=250
-
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.target=dpm1 \
