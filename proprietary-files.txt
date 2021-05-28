@@ -168,11 +168,6 @@ vendor/lib/libscale.so|972cbd87794b4ce0a5c23db946acbafd4cd6d073
 etc/firmware/a300_pfp.fw:vendor/firmware/a300_pfp.fw
 etc/firmware/a300_pm4.fw:vendor/firmware/a300_pm4.fw
 
-# Graphics RenderScript - bullhead OPR4.170623.006
-vendor/lib/libRSDriver_adreno.so|ee3386248adfa7d1a8c1107e051bcbbd3e8df0c1
-vendor/lib/librs_adreno.so|bb1d5cb84f14ed18fcbfb4815692cb196e44f180
-vendor/lib/librs_adreno_sha1.so|be8a817743950dac6e22b50cbd9657c2d35c35f2
-
 # Media - from jalebi
 vendor/lib/libOmxAacDec.so|7125dc53aaee56170b269278865b4ef3c4c8c61b
 vendor/lib/libOmxEvrcDec.so|9d7ebe0f32b84f131f28aab38ce90fb65ac1c87d
