@@ -24,7 +24,7 @@ cc_library_static {
 cc_library_shared {
     name: "android.hardware.sensors@1.0-impl.wt88047x",
     defaults: ["hidl_defaults"],
-    proprietary: true,
+    vendor: true,
     relative_install_path: "hw",
     srcs: ["Sensors.cpp"],
     shared_libs: [
