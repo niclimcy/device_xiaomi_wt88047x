@@ -70,30 +70,6 @@ LOCAL_SRC_FILES := calmodule.cfg
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-
-LOCAL_MODULE := sensors.$(TARGET_DEVICE)
-
-LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_PROPRIETARY_MODULE := true
-
-LOCAL_CFLAGS := -Wall -Werror -DLOG_TAG=\"MultiHal\"
-
-LOCAL_SRC_FILES := \
-    multihal.cpp \
-    SensorEventQueue.cpp \
-
-LOCAL_HEADER_LIBRARIES := \
-    libhardware_headers \
-
-LOCAL_SHARED_LIBRARIES := \
-    libcutils \
-    libdl \
-    liblog \
-    libutils \
-
-include $(BUILD_SHARED_LIBRARY)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := calibration_headers
 LOCAL_EXPORT_C_INCLUDE := \
     CalibrationModule.h \
